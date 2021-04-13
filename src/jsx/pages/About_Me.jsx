@@ -8,17 +8,11 @@ import Navigation_Mobile from "../components/Navigation_Mobile";
 import { Link } from "react-router-dom";
 
 const About_Me = () => {
-    <Navigation_Mobile />
+    
     
     return (
         <section className="about__me">
-            <nav className="navigation__mobile">
-                <Link to="/" className="navigation__mobile--link">Home</Link>
-                <Link to="/about" className="navigation__mobile--link">About</Link>
-                <Link to="/skills" className="navigation__mobile--link">Skills</Link>
-                <Link to="/projects" className="navigation__mobile--link">Projects</Link>
-                <Link to="/contact" className="navigation__mobile--link">Contact</Link>
-            </nav>
+            <Navigation_Mobile />
 
             <div className="navigation">
                 <Home />
@@ -35,11 +29,13 @@ const About_Me = () => {
                 </div>
 
                 <div className="about__me--paragraph">
-                    <p className="about__me--paragraph-1">Hi, I'm Hung, a 25 years old Full-stack Web Developer. As a developer, I want to bring others' ideas to come to live through the internet using my creativity and coding. Not only that, my main goal as a developer is to strike for productivity and efficiency.</p>
+                    <p className="about__me--paragraph-1">Hi, I'm Hung, a junior full-stack Web Developer. As a developer, I want to bring others' ideas come to life through the internet using my creativity and coding skills. Not only that, my main goal as a developer is to strike for productivity and efficiency.</p>
 
-                    <p className="about__me--paragraph-2">My love for web development started when I was a college student in my senior year. One of my technology and information class required my group to create a product and my role was to create a website for our product. From there I realized how fun and fascinating creating a website can be, and want to continue learning more about it.</p>
+                    <p className="about__me--paragraph-2">My passion for web development started when I was a college student in my senior year. One of my class required my group to create a product and my role was to create a website for our product. While creating the website for our product, I love how colors and font can completely transform a website into something beautiful and inspiring, I love how images and fresh layout can help the brand tell its story more effectively. From there I realized how fun and fascinating creating a website can be, and want to continue learning more about it.</p>
 
-                    <p className="about__me--paragraph-3">Other than programming, I love to play video games which is a huge part of making me want to be a web developer because there are so many fantasy character ideas that I want to create and I'm sure there are people out there who share the same interest. I also love to play bowling, badminton, and cooking as hobbies.</p>
+                    <p className="about__me--paragraph-3">
+                        Throughout my coding journey, I have created many different type of websites including static one page application like Happy Paws and My Tetris, to something more dynamic like Base Camp with many pages that also connect to the backend using Ruby on Rails. Being able to design and implement applications motivate me to continue exploring and learning new skills to challenge myself. 
+                    </p>
                 </div>
             </div>
             
