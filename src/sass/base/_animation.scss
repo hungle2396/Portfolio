@@ -6,3 +6,15 @@
     80% { transform: rotate(-3deg) }
     100% {transform: rorate(3) }
 }
+
+@keyframes fade_in {
+    0% {
+        opacity: 0;
+        transform: translateY(-5rem)
+    }
+
+    100% {
+        opacty: 1;
+        transform: translateY(0);
+    }
+}
