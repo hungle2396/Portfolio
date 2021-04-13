@@ -1,0 +1,41 @@
+.about__me {
+
+    display: grid;
+    grid-template-columns: 15rem minmax(4rem, 1fr) repeat(6, minmax(min-content, 15rem)) minmax(4rem, 1fr);
+
+    @media only screen and (max-width: $bp-mobile) {
+        grid-template-rows: 5rem min-content;
+        grid-template-columns: minmax(4rem, 1fr) repeat(6, minmax(min-content, 15rem)) minmax(4rem, 1fr);
+    }
+
+    @media only screen and (max-width: $bp-mobile-horizontal) and (orientation: landscape) {
+        grid-template-columns: 10rem minmax(4rem, 1fr) repeat(6, minmax(min-content, 15rem)) minmax(4rem, 1fr);
+    }
+
+    &--content {
+        grid-column: 3 / 9;
+
+        display: grid;
+        grid-template-rows: min-content min-content min-content;
+        grid-row-gap: 5rem;
+
+        @media only screen and (max-width: $bp-mobile) {
+            grid-column: 2 / 8;
+        }
+    }
+
+    &--paragraph {
+        font-size: 2rem;
+        
+        @media only screen and (max-width: $bp-mobile) {
+            font-size: 1.7rem;
+        }
+
+        &-1, &-2, &-3 {
+            line-height: 150%;
+            margin-bottom: 3rem;
+            border-left: thick double $primary-green-dark-color;
+            padding-left: 2rem;
+        }
+    }
+}

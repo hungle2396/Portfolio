@@ -1,0 +1,17 @@
+.btn {
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    background-color: $primary-green-color;
+    color: #fafafa;
+    font-size: 2rem;
+    transition: background-color 0.3s;
+    
+    &:link,
+    &:visited {
+        color: #fafafa;
+    }
+
+    &:hover {
+        background-color: $secondary-red-color;
+    }
+}

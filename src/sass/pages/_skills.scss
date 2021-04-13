@@ -1,0 +1,89 @@
+.skills {
+    display: grid;
+    grid-template-columns: 15rem minmax(4rem, 1fr) repeat(6, minmax(min-content, 25rem)) minmax(4rem, 1fr);
+    
+    @media only screen and (max-width: $bp-mobile) {
+        grid-template-rows: 5rem min-content;
+        grid-template-columns: minmax(4rem, 1fr) repeat(6, minmax(min-content, 25rem)) minmax(4rem, 1fr);
+    }
+
+    @media only screen and (max-width: $bp-mobile-horizontal) and (orientation: landscape) {
+        grid-template-columns: 10rem minmax(4rem, 1fr) repeat(6, minmax(min-content, 15rem)) minmax(4rem, 1fr);
+    }
+
+    &__container {
+        grid-column: 3 / 9;
+
+        display: grid;
+        grid-template-rows: min-content min-content;
+        grid-row-gap: 1rem;
+
+        @media only screen and (max-width: $bp-mobile) {
+            grid-column: 2 / 8;
+        }
+    }
+
+    &__title {
+        justify-self: center;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 12rem;
+
+        @media only screen and (max-width: $bp-mobile) {
+            grid-template-columns: 1fr;
+            grid-row-gap: 10rem;
+        }
+
+        &__details {
+
+            display: grid;
+
+            grid-template-rows: min-content min-content min-content;
+            grid-row-gap: 1rem;
+        }
+    }
+
+    &__svg {
+        width: 9rem;
+        height: auto;
+        justify-self: center;
+    }
+
+    &__list {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        align-items: flex-end;
+        grid-column-gap: 10rem;
+
+        @media only screen and (max-width: $bp-mobile) {
+            grid-column-gap: 3rem;
+        }
+    }
+
+    &__item {
+        &--figure {
+            width: 7rem;
+            height: auto;
+
+            display: grid;
+            justify-content: center;
+            @media only screen and (max-width: $bp-mobile) {
+                width: 6rem;
+            }
+        }
+
+        &--img {
+            width: 100%;
+            height: 100%;
+        }
+
+        &--figcaption {
+            text-align: center;
+            font-size: 2rem;
+        }
+    }
+}

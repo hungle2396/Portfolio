@@ -1,0 +1,244 @@
+.svg {
+
+    &__figure {
+        margin: 0;
+        text-align: center;
+        height: auto;
+        
+        &--title {
+            &--laptop {
+                
+                @media only screen and (max-width: $bp-mobile) {
+                    transform: translateY(1rem);
+                }
+
+                @media only screen and (max-width: $bp-mobile-horizontal) and (orientation: landscape) {
+                    transform: translateY(-2rem);
+                }
+            }  
+        }
+
+        &__navigation--title {
+            transform: translateY(-2.5rem);
+        }
+
+        &--profile {
+            justify-self: flex-start;
+            grid-row: 2 / 4;
+            grid-column: 10 / 12;
+
+            @media only screen and (max-width: $bp-medium) {
+                grid-row: 5 / 7;
+                grid-column: 9 / 11;
+            }
+
+            @media only screen and (max-width: $bp-mobile) {
+                grid-column: 2 / 7;
+            }
+
+            @media only screen and (max-width: $bp-mobile-horizontal) and (orientation: landscape) {
+                grid-row: 4 / 6;
+                grid-column: 8 / 10;
+                justify-self: center;
+            }
+        }
+
+        &--certificate {
+            grid-row: 4 / 6;
+            grid-column: 8 / 10;
+            margin-top: -2rem;
+
+            @media only screen and (max-width: $bp-medium) {
+                grid-row: 5 / 7;
+                grid-column: 3 / 6;
+            }
+
+            @media only screen and (max-width: $bp-small) {
+                grid-row: 6 / 8;
+            }
+
+            @media only screen and (max-width: $bp-mobile) {
+                grid-column: 7 / 14;
+            }
+        }
+
+        &--laptop {
+            grid-row: 6 / 10;
+            grid-column: 5 / 9;
+
+            @media only screen and (max-width: $bp-medium) {
+                grid-row: 7 / 10;
+            }
+
+            @media only screen and (max-width: $bp-small) {
+                grid-row: 8 / 10;
+            }
+
+            @media only screen and (max-width: $bp-mobile) {
+                grid-row: 8 / 10;
+                grid-column: 2 / 9;
+            }
+
+            @media only screen and (max-width: $bp-mobile-horizontal) and (orientation: landscape) {
+                grid-row: 7 / 9;
+                grid-column: 5 / 9;
+            }
+        }
+
+        &__laptop__container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        &--telephone {
+            grid-row: 8 / 11;
+            grid-column: 9 / 11;
+            
+            align-self: flex-end;
+            margin-bottom: 2rem;
+
+            @media only screen and (max-width: $bp-mobile) {
+                grid-column: 9 / 14;
+            }
+        }
+    }
+
+    &__link {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+
+        &--profile {
+            width: 15rem;
+            height: 15rem;
+            border-radius: 50%;
+            border: 0.5rem solid $primary-green-color;
+            transition: border 0.3s;
+
+            &:hover {
+                border: 0.5rem solid $secondary-red-color;
+            }
+
+            @media only screen and (max-width: $bp-large) {
+                width: 13rem;
+                height: 13rem;
+            }
+
+            @media only screen and (max-width: $bp-mobile) {
+                width: 10rem;
+                height: 10rem;
+            }
+
+            @media only screen and (max-width: $bp-mobile-horizontal) and (orientation: landscape) {
+                width: 9rem;
+                height: 9rem;
+            }
+
+            &--navigation {
+                width: 10rem;
+                height: 10rem;
+            }
+        }
+
+        &--home {
+            width: 40%;
+            
+            &--color {
+                transition: all 0.3s;
+            }
+
+            &:hover > .svg__image--home--color {
+                fill: $primary-green-darkest-color;
+            }
+        }
+
+        &--basecamp {
+            width: 75%;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            @media only screen and (max-width: $bp-large) {
+                top: 58%;
+            }
+
+            @media only screen and (max-width: $bp-medium) {
+                top: 65%;
+            }
+
+            @media only screen and (max-width: $bp-mobile) {
+                width: 100%;
+                top: 65%;
+            }
+
+            @media only screen and (max-width: $bp-mobile-horizontal) and (orientation: landscape) {
+                width: 50%;
+            }
+        }
+
+        &--laptop {
+            width: 75%;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 1;
+            transition: opacity 1s;
+
+            &:hover {
+                opacity: 0;
+            }
+
+            @media only screen and (max-width: $bp-large) {
+                top: 58%;
+            }
+
+            @media only screen and (max-width: $bp-medium) {
+                top: 65%;
+            }
+
+            @media only screen and (max-width: $bp-mobile) {
+                width: 100%;
+            }
+
+            @media only screen and (max-width: $bp-mobile-horizontal) and (orientation: landscape) {
+                width: 50%;
+            }
+
+            &--navigation {
+                width: 50%;
+                margin-top: 2rem;
+            }
+        }
+
+        &--skills {
+            width: 50%;
+            height: auto;
+
+            @media only screen and (max-width: $bp-small) {
+                width: 70%;
+            }
+        }
+
+        &--telephone {
+            width: 50%;
+            height: auto;
+
+            &:hover {
+                animation: shake 0.5s;
+            }
+
+            @media only screen and (max-width: $bp-mobile) {
+                width: 80%;
+            }
+        }
+    }
+}
