@@ -32,9 +32,8 @@ const Contact_Me = () => {
                     </div>
                     
                     <div className="contact__me__container--right">
-                        <form className="contact__me--form" name="contact" method="POST" data-netlify="true">
-                            {/* <input type="hidden" name="_next" value="https://hungle1996.netlify.app/thanks.html" /> */}
-
+                        <form className="contact__me--form" action="https://formsubmit.co/hungle2396@gmail.com" method="POST">
+                            
                             <div className="contact__me--box">
                                 <input className="contact__me--input" type="text" name="name" placeholder="Name" required />
                             </div>
@@ -44,7 +43,7 @@ const Contact_Me = () => {
                             </div>
 
                             <div className="contact__me--box">
-                                <textarea type="text" className="contact__me--textarea" placeholder="Message" required />
+                                <textarea type="text" className="contact__me--textarea" placeholder="Message" />
                             </div>
 
                             <button className="contact__me--submit" type="submit">
