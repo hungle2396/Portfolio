@@ -32,7 +32,7 @@ const Contact_Me = () => {
                     </div>
                     
                     <div className="contact__me__container--right">
-                        <form className="contact__me--form" name="contact" netlify>
+                        <form className="contact__me--form" name="contact" method="POST" data-netlify="true">
                             {/* <input type="hidden" name="_next" value="https://hungle1996.netlify.app/thanks.html" /> */}
 
                             <div className="contact__me--box">
