@@ -32,20 +32,22 @@ const Contact_Me = () => {
                     </div>
                     
                     <div className="contact__me__container--right">
-                        <form className="contact__me--form">
+                        <form className="contact__me--form" action="https://formsubmit.co/hungle2396@gmail.com" method="POST">
+                            {/* <input type="hidden" name="_next" value="https://hungle1996.netlify.app/thanks.html" /> */}
+
                             <div className="contact__me--box">
-                                <input className="contact__me--input" type="text" placeholder="Name" />
+                                <input className="contact__me--input" type="text" name="name" placeholder="Name" required />
                             </div>
 
                             <div className="contact__me--box">
-                                <input className="contact__me--input" type="email" placeholder="Email" />
+                                <input className="contact__me--input" type="email" name="email" placeholder="Email" required />
                             </div>
 
                             <div className="contact__me--box">
-                                <textarea type="text" className="contact__me--textarea" placeholder="Message" />
+                                <textarea type="text" className="contact__me--textarea" placeholder="Message" required />
                             </div>
 
-                            <button className="contact__me--submit">
+                            <button className="contact__me--submit" type="submit">
                                 Send
                             </button>
                         </form>
