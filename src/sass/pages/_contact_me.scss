@@ -2,7 +2,7 @@
     animation: 1s fade_in;
 
     display: grid;
-    grid-template-columns: 15rem minmax(4rem, 1fr) repeat(6, minmax(min-content, 15rem)) minmax(4rem, 1fr);
+    grid-template-columns: 15rem minmax(1rem, 1fr) repeat(6, minmax(min-content, 15rem)) minmax(1rem, 1fr);
 
     @media only screen and (max-width: $bp-mobile) {
         grid-template-rows: 5rem min-content;
