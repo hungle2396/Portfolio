@@ -1,4 +1,6 @@
 .contact__me {
+    animation: 1s fade_in;
+
     display: grid;
     grid-template-columns: 15rem minmax(4rem, 1fr) repeat(6, minmax(min-content, 15rem)) minmax(4rem, 1fr);
 
@@ -78,18 +80,24 @@
     &--input, &--textarea {
         height: 3.5rem;
         border: none;
-        outline: none;
         padding: 2rem 2rem;
         border-radius: 0.5rem;
-        width: 90%;
+        width: 100%;
         font-size: 2rem;
+        border-bottom: 3px solid transparent;
         transition: all 0.5s;
 
-        @media only screen and (max-width: $bp-mobile) {
-            width: 100%;
+        &:focus {
+            outline-color: $primary-green-color;
+            box-shadow: 0 1rem 2rem rgba(black, .1);
+        }
+		
+        /* new */
+        &:focus:invalid {
+            outline-color: $secondary-red-color;
         }
 
-        &:focus {
+        @media only screen and (max-width: $bp-mobile) {
             width: 100%;
         }
     }
@@ -108,6 +116,11 @@
         cursor: pointer;
         transition: background-color 0.3s;
         color: #f3f2f2;
+
+        &:focus {
+            outline-color: $primary-green-color;
+            box-shadow: 0 1rem 2rem rgba(black, .1);
+        }
 
         &:hover, &:active {
             background-color: $primary-green-color;

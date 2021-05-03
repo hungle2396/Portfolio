@@ -9,7 +9,6 @@ import { Link } from "react-router-dom";
 
 const About_Me = () => {
     
-    
     return (
         <section className="about__me">
             <Navigation_Mobile />
