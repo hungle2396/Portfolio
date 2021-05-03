@@ -6,7 +6,7 @@
 
     @media only screen and (max-width: $bp-mobile) {
         grid-template-rows: 5rem min-content;
-        grid-template-columns: minmax(1rem, 1fr) repeat(6, minmax(min-content, 18rem)) minmax(1rem, 1fr);
+        grid-template-columns: minmax(1rem, 2rem) repeat(6, minmax(min-content, 18rem)) minmax(1rem, 2rem);
     }
 
     @media only screen and (max-width: $bp-mobile-horizontal) and (orientation: landscape) {
